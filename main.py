@@ -6,11 +6,9 @@ import base64
 import cv2
 import io
 from pyzbar.pyzbar import decode
-import streamlit.components.v1 as components
 import numpy as np
 import requests
 from bs4 import BeautifulSoup
-from plyer import notification
 # QR code generation function
 def generate_qr(link, box_size, border, fill_color, back_color, icon_file, icon_size, icon_border):
     qr = qrcode.QRCode(
